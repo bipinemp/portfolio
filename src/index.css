@@ -1,0 +1,1156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--normalText);
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+}
+html::-webkit-scrollbar {
+  width: 7px;
+}
+html::-moz-scrollbar {
+  display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+  width: 10px;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbarHover);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+:root {
+  --scrollbar: #495670;
+  --scrollbarHover: #6d7387;
+  --sidebarBg: #112240;
+  --bgcolor: #0a192f;
+  --text: #ccd6f6;
+  --png: #fff;
+  --icon: #a8b2d1;
+  --signature: #64ffda;
+  --titleText: "Roboto", sans-serif;
+  --normalText: "Poppins", sans-serif;
+  --hoverbtn: rgba(100, 255, 218, 0.1);
+  --stickynav: rgba(10, 25, 47, 0.99);
+  --shadow: rgba(2, 12, 27, 0.7);
+  --line: #1e2f4c;
+}
+body {
+  background-color: var(--bgcolor);
+  overflow-x: hidden;
+}
+.noscroll {
+  overflow: hidden;
+}
+.navbar {
+  height: 75px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  font-family: var(--normalText);
+  z-index: 100;
+}
+.navbar.active {
+  background-color: var(--stickynav);
+  box-shadow: 0 10px 30px -10px var(--shadow);
+}
+
+.navbarlogo {
+  font-family: var(--titleText);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--text);
+  font-size: 0.6em;
+  gap: 3em;
+}
+nav ul li {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+}
+nav ul .animation {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: var(--signature);
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+nav ul li span {
+  color: var(--signature);
+}
+nav ul li:hover {
+  color: var(--signature);
+}
+nav img {
+  width: 50px;
+  margin-top: -10px;
+}
+.loader {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--titleText);
+}
+.hammenu {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.hammenu span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: var(--signature);
+  transition: all 150ms linear;
+  border-radius: 3px;
+}
+.hammenu span:nth-child(1) {
+  top: 5px;
+  width: 40px;
+}
+.hammenu span:nth-child(2) {
+  width: 30px;
+  top: 10px;
+}
+.hammenu span:nth-child(3) {
+  width: 20px;
+  top: 15px;
+}
+.hammenu.active span:nth-child(2) {
+  opacity: 0;
+}
+.hammenu.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.hammenu.active span:nth-child(3) {
+  width: 40px;
+  transform: rotate(-45deg);
+  top: 12px;
+}
+.hammenu.active {
+  animation: hamactive 0.4s linear forwards;
+}
+@keyframes hamactive {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sidebar {
+  position: fixed;
+  width: min(400px, 250px);
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100vw);
+  visibility: hidden;
+  z-index: 100;
+  background: var(--sidebarBg);
+  backdrop-filter: blur(10px);
+  transition: all 250ms linear;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+.sidebar.active {
+  transform: translateX(0vw);
+  visibility: visible;
+  transition: all 250ms linear;
+}
+.sidebarul {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.sidebarul li {
+  display: flex;
+  flex-direction: column;
+}
+.sidebarul li span {
+  color: var(--signature);
+  font-family: var(--titleText);
+}
+.sidebarul li a {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+
+/* Hero component's css here !!! */
+.hero {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 115px 100px 100px 100px;
+  margin-left: 100px;
+}
+.hero1 {
+  color: var(--signature);
+  font-family: var(--normalText);
+  font-size: 1.2em;
+}
+.hero2 {
+  color: var(--text);
+  font-family: var(--titleText);
+  font-size: 2.1em;
+  filter: brightness(110%);
+}
+.hero3 {
+  color: var(--text);
+  font-family: var(--titleText);
+  font-size: 1.4em;
+  filter: brightness(80%);
+  margin-top: -10px;
+}
+.hero4 {
+  color: var(--text);
+  font-family: var(--normalText);
+  font-size: 1em;
+  filter: brightness(65%);
+}
+.hero4 p {
+  line-height: 30px;
+}
+
+.hero5 button {
+  margin-top: 30px;
+  border: 1px solid var(--signature);
+  background-color: transparent;
+  color: var(--signature);
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-family: var(--normalText);
+  font-size: 1.1em;
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+.hero5 button:hover {
+  background-color: var(--hoverbtn) !important;
+}
+
+/* Info.jsx css starts here !! */
+
+.leftinfo {
+  color: var(--icon);
+  position: fixed;
+  top: 47%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7em;
+}
+.icon {
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+.icon:hover {
+  stroke: var(--signature);
+  transform: scale(1.2);
+}
+
+.leftinfo::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 84px;
+  background-color: var(--icon);
+}
+.rightinfo {
+  position: fixed;
+  top: 47%;
+  right: 0;
+  padding-right: 40px;
+  color: var(--icon);
+  font-family: var(--normalText);
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 1.7em;
+  font-size: 0.8em;
+  margin-top: 25px;
+}
+.rightinfo a {
+  transition: all 150ms linear;
+}
+.rightinfo a:hover {
+  color: var(--signature);
+  margin-top: -6px;
+}
+.rightinfo::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: var(--icon);
+}
+
+/* About page css starts here!! */
+.aboutmain {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1000px;
+  gap: 40px;
+}
+.aboutsecond {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 65%;
+}
+.about1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.about1::before {
+  content: "01.";
+  color: var(--signature);
+  font-family: var(--titleText);
+  font-size: 1.2em;
+}
+
+.about1 h1 {
+  display: inline;
+  color: var(--text);
+  font-family: var(--titleText);
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+.about1::after {
+  content: "";
+  width: 350px;
+  height: 1px;
+  background-color: var(--line);
+}
+.about2 {
+  color: var(--text);
+  font-family: var(--normalText);
+  letter-spacing: 1px;
+  filter: brightness(70%);
+}
+
+.about3 p {
+  position: relative;
+  display: inline;
+  color: var(--signature);
+  font-family: var(--normalText);
+  cursor: pointer;
+}
+.about3 p:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--signature);
+  width: 0%;
+  transition: all 150ms linear;
+}
+.about3 p:hover:after {
+  width: 100%;
+}
+.aboutimg {
+  position: relative;
+  cursor: pointer;
+  background: var(--signature);
+  border-radius: 5px;
+  width: 35%;
+}
+.aboutimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 150ms linear;
+  border: 1px solid white;
+}
+.aboutimg::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: 1px solid var(--signature);
+  border-radius: 5px;
+  transition: all 150ms linear;
+}
+.aboutimg:hover::after {
+  top: 10px;
+  left: 10px;
+}
+.aboutimg img:hover {
+  mix-blend-mode: normal;
+}
+
+/* Skills component css starts here!! */
+.skills {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin: 0 auto;
+  padding: 50px 100px 100px 100px;
+}
+.skills1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.skills1 h1 {
+  display: inline;
+  color: var(--text);
+  font-family: var(--titleText);
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+.skills1::before {
+  content: "02.";
+  color: var(--signature);
+  font-family: var(--titleText);
+  font-size: 1.2em;
+}
+.skills1::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: var(--line);
+}
+.skills2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.skills2 p {
+  font-family: var(--normalText);
+  color: var(--text);
+  letter-spacing: 1px;
+  filter: brightness(70%);
+}
+.skills2 span {
+  font-family: var(--normalText);
+  color: var(--text);
+  letter-spacing: 1px;
+  filter: brightness(90%);
+}
+.skills2 span a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--signature);
+  width: 0%;
+  transition: all 150ms linear;
+}
+.skills2 span a:hover:after {
+  width: 100%;
+}
+
+.skills2 span a {
+  position: relative;
+  display: inline;
+  color: var(--signature);
+  font-family: var(--normalText);
+  cursor: pointer;
+}
+.skills2-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  color: var(--text);
+  font-family: var(--titleText);
+  font-size: 1.3em;
+  filter: brightness(85%);
+}
+.techstack {
+  width: 102px;
+  position: relative;
+  display: inline;
+  color: var(--text);
+  border-radius: 3%;
+  border-bottom: 2px solid var(--signature);
+}
+
+.skills2-1 div {
+  position: relative;
+  background-color: var(--png);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.skills2-1 div p {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+.skills2 div:hover::after {
+  top: 4px;
+  left: 4px;
+}
+.skills2-1 div::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--signature);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  z-index: -1;
+  transition: all 150ms linear;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.skills2-1 img {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+}
+
+/* Work component css starts here!! */
+.work {
+  padding: 60px 100px 100px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.work1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.work1 h1 {
+  display: inline;
+  color: var(--text);
+  font-family: var(--titleText);
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+.work1::before {
+  content: "03.";
+  color: var(--signature);
+  font-family: var(--titleText);
+  font-size: 1.2em;
+}
+.work1::after {
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: var(--line);
+}
+.work2 {
+  display: flex;
+  gap: 10em;
+  flex-direction: column;
+}
+.work2-1 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.work2-1-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 363px;
+  background: var(--signature);
+  border-radius: 5px;
+}
+.work2-1-1-1 {
+  left: auto;
+  right: 0;
+}
+
+.work2-1-1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+  z-index: -1;
+  border-radius: 5px;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+  transition: all 250ms linear;
+}
+.work2-1-1 img:hover {
+  mix-blend-mode: normal;
+  filter: none;
+}
+.work2-1-2 {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+.work2-1-2 img {
+  display: none;
+}
+.work2-1-2-1-1 {
+  margin-right: auto;
+  margin-left: 0px;
+  align-items: flex-start;
+}
+.work2-1-2-1 p {
+  color: var(--signature);
+  font-family: var(--normalText);
+  font-size: 0.8em;
+}
+.work2-1-2-2 h1 {
+  color: var(--text);
+  font-family: var(--titleText);
+  letter-spacing: 1px;
+  font-size: 1.7em;
+}
+
+.work2-1-2-3 p {
+  width: 100%;
+  color: var(--icon);
+  font-family: var(--normalText);
+  font-size: 0.85em;
+  text-align: end;
+  padding: 25px;
+  background-color: var(--sidebarBg);
+  border-radius: 5px;
+  z-index: 3;
+  margin: 10px 0;
+  box-shadow: 0 10px 30px -15px var(--shadow);
+}
+.work2-1-2-3-1 p {
+  text-align: start;
+}
+.work2-1-2-4 {
+  display: flex;
+  gap: 2em;
+  color: var(--icon);
+  font-family: var(--normalText);
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.work2-1-2-4-1 {
+  display: flex;
+  gap: 2em;
+  color: var(--icon);
+  font-family: var(--normalText);
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.work2-1-2-5 {
+  display: flex;
+  gap: 2em;
+  color: var(--text);
+  font-family: var(--normalText);
+  font-size: 0.8em;
+}
+.icon1,
+.icon2 {
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.work2-1-2-5 div {
+  position: relative;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+.work2-1-2-5 div span {
+  position: absolute;
+  inset: 0;
+}
+.work2-1-2-5 div:hover {
+  transform: scale(1.2);
+}
+.work2-1-2-5 div:hover .icon1 {
+  stroke: var(--signature);
+}
+.work2-1-2-5 div:hover .icon2 {
+  fill: var(--signature);
+}
+
+/* About component css starts here */
+.contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.contact .shy {
+  color: var(--text);
+  font-family: var(--normalText);
+  font-size: 1.2em;
+  align-self: flex-start;
+  padding-left: 25px;
+  margin-top: 50px;
+  filter: brightness(90%);
+}
+.contact1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.contact1 h1 {
+  display: inline;
+  color: var(--text);
+  font-family: var(--titleText);
+  letter-spacing: 1px;
+  font-size: 2.3em;
+}
+.contact1::before {
+  content: "03.";
+  color: var(--signature);
+  font-family: var(--titleText);
+  font-size: 1.2em;
+}
+.contact1::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: var(--line);
+}
+.contact2 {
+  display: flex;
+  gap: 5em;
+}
+.contact2-1 {
+  display: flex;
+  gap: 1em;
+}
+.contact2-1-1 {
+  position: relative;
+  padding: 25px;
+  background-color: var(--line);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact2-1-1 .icon {
+  font-size: 40px;
+  fill: var(--signature);
+}
+.contact2-1-1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--signature);
+  border-radius: 50%;
+  z-index: -1;
+  filter: brightness(50%);
+}
+.contact2-1-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3em;
+}
+.contact2-1-2 h1 {
+  font-family: var(--titleText);
+  color: var(--text);
+  font-size: 1.5em;
+  filter: brightness(90%);
+}
+.contact2-1-2 p,
+.contact2-1-2 a {
+  color: var(--icon);
+  font-size: 0.8em;
+  font-family: var(--normalText);
+  transition: all 150ms linear;
+}
+.contact2-1-2 a:hover {
+  color: var(--signature);
+}
+
+/* Footer css starts here */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 50px 20px;
+  color: var(--icon);
+  font-family: var(--normalText);
+  font-size: 0.8em;
+}
+
+/* Media Queries starts here */
+@media only screen and (max-width: 1024px) {
+  .hero {
+    max-width: 860px;
+    padding: 100px 100px 100px 50px;
+  }
+  .hero2 {
+    font-size: 1.6em;
+  }
+  .hero3 {
+    font-size: 0.9em;
+  }
+  .hero4 {
+    font-size: 1em;
+  }
+  .hero5 button {
+    padding: 10px 30px;
+    font-size: 0.9em;
+  }
+  .rightinfo {
+    padding-right: 30px;
+  }
+  .leftinfo {
+    padding-left: 30px;
+  }
+  .about {
+    width: 60%;
+  }
+  .aboutimg {
+    width: 40%;
+  }
+  .work2-1-1 {
+    width: 55%;
+  }
+  .work2-1-1 {
+    height: auto;
+  }
+  .work2-1-1 img {
+    width: 100%;
+    height: auto;
+    object-position: top center center;
+  }
+  .work2-1-2 {
+    width: 70%;
+  }
+  .contact2-1-2 {
+    padding: 0;
+  }
+  .contact2-1-1 {
+    padding: 12.5px;
+  }
+  .contact2 {
+    gap: 2em;
+  }
+  .contact2-1-1 .icon {
+    font-size: 25px;
+  }
+  .contact1 h1 {
+    font-size: 1.5em;
+  }
+  .contact .shy {
+    font-size: 1em;
+  }
+  .contact2-1-2 a,
+  .contact2-1-2 p {
+    word-break: break-word;
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info {
+    display: none;
+  }
+  .hero {
+    max-width: 1000px;
+    padding: 70px 30px 100px 10px;
+    margin-left: 55px;
+  }
+  .hero2 {
+    font-size: 1.2em;
+  }
+  .navbar ul:not(.sidebarul) {
+    display: none;
+  }
+  .navbar {
+    padding: 15px 25px;
+  }
+  .hammenu {
+    display: flex;
+  }
+  .aboutmain {
+    padding: 60px 23px 100px 23px;
+  }
+  .aboutsecond {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .about1::after {
+    width: 100%;
+  }
+  .aboutimg {
+    width: 45%;
+  }
+  .about3 p {
+    text-align: center;
+  }
+  .about1 h1 {
+    font-size: 1.2em;
+  }
+  .skills {
+    padding: 100px 23px;
+  }
+  .skills2-1 img {
+    width: 30px;
+    height: 30px;
+  }
+  .skills2-1 div::after {
+    top: 5px;
+    left: 5px;
+  }
+  .skills2 div:hover::after {
+    top: 3px;
+    left: 3px;
+  }
+  .skills1::after {
+    width: 100%;
+  }
+  .work {
+    padding: 40px 23px 100px 23px;
+  }
+  .work1 h1 {
+    font-size: 1.3em;
+  }
+  .work1::after {
+    width: 100%;
+  }
+  .work2-1-2 {
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 20px;
+    position: relative;
+  }
+  .first-work {
+    padding: 40px 40px 30px;
+    background-image: url(../../framer_motion/src/assets/netflix.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bgcolor);
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+  }
+  .first-work::before {
+    content: "";
+    background-color: #0a192f;
+    opacity: 0.6;
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    filter: grayscale(5%) contrast(1) brightness(90%);
+  }
+  .work2-1-2-4 p,
+  .work2-1-2-4-1 span {
+    color: var(--png);
+  }
+  .work2-1-2-3 p {
+    text-align: start;
+    background: transparent;
+    padding: 0;
+  }
+  .work2 {
+    gap: 5em;
+  }
+  .work2-1-1 {
+    display: none;
+  }
+  .first-work::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--signature);
+    z-index: -1;
+    border-radius: 10px;
+    filter: brightness(50%);
+  }
+  .contact {
+    padding: 100px 23px;
+  }
+  .contact1::after {
+    width: 100%;
+  }
+  .contact2 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .contact .shy {
+    padding-left: 15px;
+  }
+  .contact2-1-1::after {
+    display: none;
+  }
+  .contact2-1 {
+    gap: 0.8em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    margin-left: 20px;
+    padding: 70px 20px 100px 10px;
+  }
+  .hero2 {
+    font-size: 1em;
+  }
+  .hero3 {
+    font-size: 0.8em;
+  }
+  .hero4 {
+    font-size: 0.9em;
+  }
+  .aboutimg {
+    width: 70%;
+  }
+  .about2 p {
+    text-align: center;
+  }
+  .skills2 p {
+    text-align: center;
+  }
+  .skills2-1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .skills2-1 img {
+    width: 20px;
+    height: 20px;
+  }
+  .skills2 span {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .first-work {
+    position: relative;
+    padding: 10px 15px 30px;
+  }
+  .work2-1-2 {
+    padding-left: 15px;
+  }
+
+  .work2-1-2-3 p {
+    font-size: 0.75em;
+  }
+  .work2-1-2-2 h1 {
+    font-size: 1.5em;
+  }
+  .work2-1-2-1 p {
+    font-size: 0.7em;
+  }
+
+  .icon1,
+  .icon2 {
+    color: var(--icon);
+  }
+  .footer {
+    font-size: 0.7em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
