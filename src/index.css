@@ -649,8 +649,8 @@ nav img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top left;
+  object-fit: fill;
+  object-position: center center;
   mix-blend-mode: multiply;
   cursor: pointer;
   z-index: -1;
@@ -1024,6 +1024,26 @@ nav img {
   }
   .first-work {
     padding: 40px 40px 30px;
+    background-image: url(../../framer_motion/src/assets/ecommerce.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bgcolor);
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+  }
+  .second-work {
+    padding: 40px 40px 30px;
+    background-image: url(../../framer_motion/src/assets/tesla.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--bgcolor);
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+  }
+  .third-work {
+    padding: 40px 40px 30px;
     background-image: url(../../framer_motion/src/assets/netflix.png);
     background-size: cover;
     background-position: center;
@@ -1032,7 +1052,9 @@ nav img {
     position: relative;
     border-radius: 10px;
   }
-  .first-work::before {
+  .first-work::before,
+  .second-work::before,
+  .third-work::before {
     content: "";
     background-color: #0a192f;
     opacity: 0.6;
@@ -1041,6 +1063,7 @@ nav img {
     border-radius: 10px;
     filter: grayscale(5%) contrast(1) brightness(90%);
   }
+
   .work2-1-2-4 p,
   .work2-1-2-4-1 span {
     color: var(--png);
@@ -1056,7 +1079,9 @@ nav img {
   .work2-1-1 {
     display: none;
   }
-  .first-work::after {
+  .first-work::after,
+  .second-work::after,
+  .third-work::after {
     content: "";
     display: block;
     position: absolute;

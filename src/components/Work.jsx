@@ -1,5 +1,7 @@
 import React from "react";
 import netflix from "../assets/netflix.png";
+import ecommerce from "../assets/ecommerce.png";
+import tesla from "../assets/tesla.png";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { useAnimateHook } from "../hooks/animateHook";
@@ -21,62 +23,64 @@ function Work() {
           className="work2-1 first-work"
         >
           <div className="work2-1-1">
-            <img src={netflix} alt="" />
+            <img src={ecommerce} alt="tesla" />
           </div>
           <div className="work2-1-2">
             <div className="work2-1-2-1">
               <p>Featured Project</p>
             </div>
             <div className="work2-1-2-2">
-              <h1>Netflix Clone</h1>
+              <h1>Ecommerce</h1>
             </div>
             <div className="work2-1-2-3">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis rerum ut corporis id tempora neque? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Veniam, illo! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                quos.
+                My ecommerce website built with React allows users to easily
+                view, filter, and search products. They can also view specific
+                products, adjust quantities, add items to their cart, and
+                checkout seamlessly. Check it out and experience smooth online
+                shopping!
               </p>
             </div>
             <div className="work2-1-2-4">
               <p>React</p>
+              <p>useContext</p>
+              <p>useReducer</p>
               <p>Vanilla CSS</p>
             </div>
             <div className="work2-1-2-5">
-              <div>
+              <a href="https://github.com/bipinemp/Ecommerce" target="_blank">
                 <FiGithub className="icon1" />
                 <span title="Github"></span>
-              </div>
-              <div>
+              </a>
+              <a
+                href="https://bipinbhandariecommerce.netlify.app/"
+                target="_blank"
+              >
                 <RiExternalLinkLine className="icon2" />
                 <span title="Live Demo"></span>
-              </div>
+              </a>
             </div>
           </div>
         </motion.div>
         <motion.div
           ref={ref2}
           animate={animation2}
-          className="work2-1 first-work"
+          className="work2-1 second-work"
         >
           <div className="work2-1-1 work2-1-1-1">
-            <img src={netflix} alt="" />
+            <img src={tesla} alt="" />
           </div>
           <div className="work2-1-2 work2-1-2-1-1">
             <div className="work2-1-2-1">
               <p>Featured Project</p>
             </div>
             <div className="work2-1-2-2">
-              <h1>Netflix Clone</h1>
+              <h1>Tesla Clone</h1>
             </div>
             <div className="work2-1-2-3 work2-1-2-3-1">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis rerum ut corporis id tempora neque? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Veniam, illo! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                quos.
+                My Tesla website clone accurately replicates the official front
+                page of the official website.
               </p>
             </div>
             <div className="work2-1-2-4-1">
@@ -84,21 +88,21 @@ function Work() {
               <span>Vanilla CSS</span>
             </div>
             <div className="work2-1-2-5">
-              <div>
+              <a href="https://github.com/bipinemp/Tesla_clone" target="_blank">
                 <FiGithub className="icon1" />
                 <span title="Github"></span>
-              </div>
-              <div>
+              </a>
+              <a href="https://reacttesla.netlify.app/" target="_blank">
                 <RiExternalLinkLine className="icon2" />
                 <span title="Live Demo"></span>
-              </div>
+              </a>
             </div>
           </div>
         </motion.div>
         <motion.div
           ref={ref3}
           animate={animation3}
-          className="work2-1 first-work"
+          className="work2-1 third-work"
         >
           <div className="work2-1-1">
             <img src={netflix} alt="" />
