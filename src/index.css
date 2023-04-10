@@ -714,7 +714,7 @@ nav img {
   gap: 2em;
   color: var(--icon);
   font-family: var(--normalText);
-  font-size: 0.8em;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 .work2-1-2-4-1 {
@@ -722,7 +722,7 @@ nav img {
   gap: 2em;
   color: var(--icon);
   font-family: var(--normalText);
-  font-size: 0.8em;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 
@@ -1023,7 +1023,7 @@ nav img {
     position: relative;
   }
   .first-work {
-    padding: 40px 40px 30px;
+    padding: 40px 20px 30px;
     background-image: url(../../framer_motion/src/assets/ecommerce.png);
     background-size: cover;
     background-position: center;
@@ -1033,7 +1033,7 @@ nav img {
     border-radius: 10px;
   }
   .second-work {
-    padding: 40px 40px 30px;
+    padding: 40px 20px 30px;
     background-image: url(../../framer_motion/src/assets/tesla.png);
     background-size: cover;
     background-position: center;
@@ -1043,7 +1043,7 @@ nav img {
     border-radius: 10px;
   }
   .third-work {
-    padding: 40px 40px 30px;
+    padding: 40px 20px 30px;
     background-image: url(../../framer_motion/src/assets/netflix.png);
     background-size: cover;
     background-position: center;

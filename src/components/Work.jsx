@@ -43,9 +43,9 @@ function Work() {
             </div>
             <div className="work2-1-2-4">
               <p>React</p>
-              <p>useContext</p>
-              <p>useReducer</p>
-              <p>Vanilla CSS</p>
+              <p>context</p>
+              <p>reducer</p>
+              <p>CSS</p>
             </div>
             <div className="work2-1-2-5">
               <a href="https://github.com/bipinemp/Ecommerce" target="_blank">
@@ -85,7 +85,7 @@ function Work() {
             </div>
             <div className="work2-1-2-4-1">
               <span>React</span>
-              <span>Vanilla CSS</span>
+              <span>CSS</span>
             </div>
             <div className="work2-1-2-5">
               <a href="https://github.com/bipinemp/Tesla_clone" target="_blank">
@@ -125,7 +125,7 @@ function Work() {
             </div>
             <div className="work2-1-2-4">
               <p>React</p>
-              <p>Vanilla CSS</p>
+              <p>CSS</p>
             </div>
             <div className="work2-1-2-5">
               <div>
