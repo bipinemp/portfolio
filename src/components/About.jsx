@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import img1 from "../assets/img1.jpg";
 import { motion } from "framer-motion";
 import { useAnimateHook } from "../hooks/animateHook";
 
@@ -28,7 +28,7 @@ function About() {
           </div>
         </div>
         <div className="aboutimg">
-          <img src={logo} alt="" />
+          <img src={img1} alt="" />
         </div>
       </div>
     </motion.div>
