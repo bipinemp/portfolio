@@ -48,17 +48,21 @@ function Work() {
               <p>CSS</p>
             </div>
             <div className="work2-1-2-5">
-              <a href="https://github.com/bipinemp/Ecommerce" target="_blank">
-                <FiGithub className="icon1" />
-                <span title="Github"></span>
-              </a>
-              <a
-                href="https://bipinbhandariecommerce.netlify.app/"
-                target="_blank"
-              >
-                <RiExternalLinkLine className="icon2" />
-                <span title="Live Demo"></span>
-              </a>
+              <div>
+                <a href="https://github.com/bipinemp/Ecommerce" target="_blank">
+                  <FiGithub className="icon1" />
+                  <p title="Github"></p>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://bipinbhandariecommerce.netlify.app/"
+                  target="_blank"
+                >
+                  <RiExternalLinkLine className="icon2" />
+                  <p title="Live Demo"></p>
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -88,14 +92,21 @@ function Work() {
               <span>CSS</span>
             </div>
             <div className="work2-1-2-5">
-              <a href="https://github.com/bipinemp/Tesla_clone" target="_blank">
-                <FiGithub className="icon1" />
-                <span title="Github"></span>
-              </a>
-              <a href="https://reacttesla.netlify.app/" target="_blank">
-                <RiExternalLinkLine className="icon2" />
-                <span title="Live Demo"></span>
-              </a>
+              <div>
+                <a
+                  href="https://github.com/bipinemp/Tesla_clone"
+                  target="_blank"
+                >
+                  <FiGithub className="icon1" />
+                  <p title="Github"></p>
+                </a>
+              </div>
+              <div>
+                <a href="https://reacttesla.netlify.app/" target="_blank">
+                  <RiExternalLinkLine className="icon2" />
+                  <p title="Live Demo"></p>
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -130,11 +141,11 @@ function Work() {
             <div className="work2-1-2-5">
               <div>
                 <FiGithub className="icon1" />
-                <span title="Github"></span>
+                <p title="Github"></p>
               </div>
               <div>
                 <RiExternalLinkLine className="icon2" />
-                <span title="Live Demo"></span>
+                <p title="Live Demo"></p>
               </div>
             </div>
           </div>

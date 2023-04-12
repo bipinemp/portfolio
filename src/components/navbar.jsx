@@ -103,7 +103,7 @@ const Navbar = () => {
             <span>04.</span> Contact
           </a>
         </motion.li>
-        <div class="animation start-home"></div>
+        <div className="animation start-home"></div>
       </motion.ul>
       <div onClick={handleHam} className={`hammenu ${ham ? "active" : ""}`}>
         <span></span>

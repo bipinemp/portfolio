@@ -745,9 +745,10 @@ nav img {
   cursor: pointer;
   transition: all 150ms linear;
 }
-.work2-1-2-5 div span {
+.work2-1-2-5 div p {
   position: absolute;
   inset: 0;
+  cursor: pointer;
 }
 .work2-1-2-5 div:hover {
   transform: scale(1.2);
