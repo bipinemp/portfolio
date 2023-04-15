@@ -67,7 +67,7 @@ function Hero() {
             delay: 3.1,
           }}
         >
-          Contact me 🤝
+          <a href="#contact"> Contact me 🤝</a>
         </motion.button>
       </div>
     </div>

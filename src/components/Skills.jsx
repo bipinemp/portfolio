@@ -23,7 +23,7 @@ function Skills() {
           MERN Btw. <br />
         </p>
         <span>
-          For more details just <a href="#">Contact</a> me.
+          For more details just <a href="#contact">Contact</a> me.
         </span>
         <span className="techstack">Tech stack</span>
 
