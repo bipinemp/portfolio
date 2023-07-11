@@ -25,7 +25,7 @@ const HexagonWithLetter = ({ color, size, delay }) => {
         opacity="0"
         fontSize="35px"
         style={{
-          animation: "show-letter 500ms ease-in-out forwards 1s",
+          animation: "show-letter 200ms ease-in-out forwards 1s",
         }}
       >
         B

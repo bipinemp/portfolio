@@ -120,7 +120,7 @@ nav img {
 }
 .loader {
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--titleText);
@@ -280,11 +280,14 @@ nav img {
 }
 
 /* Info.jsx css starts here !! */
+.info {
+  height: 100%;
+}
 
 .leftinfo {
   color: var(--icon);
   position: fixed;
-  top: 47%;
+  bottom: 0;
   padding-left: 50px;
   display: flex;
   flex-direction: column;
@@ -309,7 +312,7 @@ nav img {
 }
 .rightinfo {
   position: fixed;
-  top: 47%;
+  bottom: 0;
   right: 0;
   padding-right: 40px;
   color: var(--icon);

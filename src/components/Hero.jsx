@@ -11,7 +11,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 2.2,
+            delay: 1.65,
           }}
         >
           Hi👋👋, my name is
@@ -24,7 +24,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 2.4,
+            delay: 1.75,
           }}
         >
           Bipin Bhandari.
@@ -37,7 +37,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 2.6,
+            delay: 1.85,
           }}
         >
           I make visually satisfying websites.
@@ -50,7 +50,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 2.8,
+            delay: 1.95,
           }}
         >
           Welcome to my frontend web developer portfolio! As a beginner, I
@@ -64,7 +64,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 3.1,
+            delay: 2.05,
           }}
         >
           <a href="#contact"> Contact me 🤝</a>

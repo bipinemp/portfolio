@@ -72,7 +72,7 @@ const Navbar = () => {
           animate={{
             y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 90, delay: 1.1 },
+            transition: { type: "spring", stiffness: 90, delay: 0.9 },
           }}
         >
           <a href="#skills">
@@ -84,7 +84,7 @@ const Navbar = () => {
           animate={{
             y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 90, delay: 1.4 },
+            transition: { type: "spring", stiffness: 90, delay: 1 },
           }}
         >
           <a href="#work">
@@ -96,7 +96,7 @@ const Navbar = () => {
           animate={{
             y: 0,
             opacity: 1,
-            transition: { type: "spring", stiffness: 90, delay: 1.7 },
+            transition: { type: "spring", stiffness: 90, delay: 1.1 },
           }}
         >
           <a href="#contact">

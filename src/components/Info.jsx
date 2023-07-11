@@ -14,7 +14,7 @@ function Info() {
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: "linear", duration: 0.7, delay: 3.2 }}
+        transition={{ ease: "linear", duration: 0.7, delay: 2.1 }}
         className="leftinfo"
       >
         <li>
@@ -46,7 +46,7 @@ function Info() {
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: "linear", duration: 0.7, delay: 3.2 }}
+        transition={{ ease: "linear", duration: 0.7, delay: 2.1 }}
         className="rightinfo"
       >
         <li>
