@@ -15,20 +15,20 @@ function About() {
         <div className="about">
           <div className="about2">
             <p>
-              Hi👋, my name is Bipin a nd I enjoy making beautifull websites. I
-              started making websites back in 2021 at the time of Lockdown bcoz
-              of free time where I learn about HTML & CSS. <br /> <br /> Today,
-              I've learned about various technologies of frontend web
-              development. I'm always interested to work on frontend projects
-              with positive people.
+              Hi👋, my name is Bipin a nd I enjoy making beautifull websites.As
+              a junior Front-End Developer,I make a good skills of HTML, CSS,
+              JS, ReactJS/NextJS, Tailwindcss <br /> <br /> I'm always
+              interested to work on frontend projects with positive people.
             </p>
           </div>
           <div className="about3">
-            <p>Let's make something speical.</p>
+            <p>
+              <a href="#contact">Let's make something speical.</a>
+            </p>
           </div>
         </div>
         <div className="aboutimg">
-          <img src={img1} alt="" />
+          <img src={img1} alt="my_photo" />
         </div>
       </div>
     </motion.div>

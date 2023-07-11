@@ -110,46 +110,6 @@ function Work() {
             </div>
           </div>
         </motion.div>
-        <motion.div
-          ref={ref3}
-          animate={animation3}
-          className="work2-1 third-work"
-        >
-          <div className="work2-1-1">
-            <img src={netflix} alt="" />
-          </div>
-          <div className="work2-1-2">
-            <div className="work2-1-2-1">
-              <p>Featured Project</p>
-            </div>
-            <div className="work2-1-2-2">
-              <h1>Netflix Clone</h1>
-            </div>
-            <div className="work2-1-2-3">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis rerum ut corporis id tempora neque? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Veniam, illo! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                quos.
-              </p>
-            </div>
-            <div className="work2-1-2-4">
-              <p>React</p>
-              <p>CSS</p>
-            </div>
-            <div className="work2-1-2-5">
-              <div>
-                <FiGithub className="icon1" />
-                <p title="Github"></p>
-              </div>
-              <div>
-                <RiExternalLinkLine className="icon2" />
-                <p title="Live Demo"></p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

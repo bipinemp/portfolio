@@ -870,6 +870,7 @@ nav img {
 .footer {
   width: 100%;
   display: flex;
+
   justify-content: center;
   align-items: center;
   padding: 150px 50px 20px;
@@ -1119,6 +1120,9 @@ nav img {
   .contact2-1 {
     gap: 0.8em;
   }
+  .footer {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .hero {
@@ -1179,7 +1183,8 @@ nav img {
   }
   .footer {
     font-size: 0.7em;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
   }
 }

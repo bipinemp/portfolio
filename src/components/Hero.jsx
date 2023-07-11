@@ -40,7 +40,7 @@ function Hero() {
             delay: 1.85,
           }}
         >
-          I make visually satisfying websites.
+          Front-End React Developer
         </motion.h1>
       </div>
       <div className="hero4">
