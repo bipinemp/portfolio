@@ -34,11 +34,10 @@ function Work() {
             </div>
             <div className="work2-1-2-3">
               <p>
-                My ecommerce website built with React allows users to easily
-                view, filter, and search products. They can also view specific
-                products, adjust quantities, add items to their cart, and
-                checkout seamlessly. Check it out and experience smooth online
-                shopping!
+                My Frontend specific ecommerce website built with React allows
+                users to easily view, filter, and search products. They can also
+                view specific products, adjust quantities, add items to their
+                cart, and checkout seamlessly.
               </p>
             </div>
             <div className="work2-1-2-4">
