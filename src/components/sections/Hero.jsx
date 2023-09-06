@@ -58,17 +58,19 @@ function Hero() {
         </motion.p>
       </div>
       <div className="hero5">
-        <motion.button
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            type: "spring",
-            bounce: 0.1,
-            delay: 2.05,
-          }}
-        >
-          <a href="#contact"> Contact me 🤝</a>
-        </motion.button>
+        <a href="#contact">
+          <motion.button
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              bounce: 0.1,
+              delay: 2.05,
+            }}
+          >
+            Contact me 🤝
+          </motion.button>
+        </a>
       </div>
     </div>
   );
