@@ -1,6 +1,6 @@
 import React from "react";
 import { FaMapMarked, FaEnvelopeOpenText } from "react-icons/fa";
-import { useAnimateHook } from "../hooks/animateHook";
+import { useAnimateHook } from "../../hooks/animateHook";
 import { motion } from "framer-motion";
 
 function Contact() {

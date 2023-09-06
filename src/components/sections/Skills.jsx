@@ -1,11 +1,14 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
-import tailwindcss from "../assets/tailwindcss.png";
+
+import html from "../../assets/skills/html.png";
+import css from "../../assets/skills/css.png";
+import js from "../../assets/skills/js.png";
+import react from "../../assets/skills/react.png";
+import tailwindcss from "../../assets/skills//tailwindcss.png";
+import nextjs from "../../assets/skills//nextjs.png";
+
 import { motion } from "framer-motion";
-import { useAnimateHook } from "../hooks/animateHook";
+import { useAnimateHook } from "../../hooks/animateHook";
 
 function Skills() {
   const { animation, ref } = useAnimateHook(0.4);
@@ -18,9 +21,9 @@ function Skills() {
         <p>
           I possess a solid grasp of essential frontend skills that allow me to
           craft stunning and dynamic websites. <br /> <br />I have created many
-          websites with the help of HTML5 , CSS3 , Javascript , ReactJs. I
-          also have very Basic knowledge of MERN stack , currently I'm learning
-          MERN Btw. <br />
+          websites with the help of HTML5 , CSS3 , Javascript , ReactJs. I also
+          have very Basic knowledge of MERN stack , currently I'm learning MERN
+          Btw. <br />
         </p>
         <span>
           For more details just <a href="#contact">Contact</a> me.
@@ -37,6 +40,10 @@ function Skills() {
             <p title="CSS3"></p>
           </div>
           <div>
+            <img src={tailwindcss} alt="TailwindCss logo" />
+            <p title="Tailwind CSS"></p>
+          </div>
+          <div>
             <img src={js} alt="JS logo" />
             <p title="Javascript"></p>
           </div>
@@ -45,8 +52,8 @@ function Skills() {
             <p title="React JS"></p>
           </div>
           <div>
-            <img src={tailwindcss} alt="TailwindCss logo" />
-            <p title="Tailwind CSS"></p>
+            <img src={nextjs} alt="Next.JS logo" />
+            <p title="NEXT.js"></p>
           </div>
         </div>
       </div>

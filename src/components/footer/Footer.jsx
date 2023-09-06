@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useAnimateHook } from "../hooks/animateHook";
+import { useAnimateHook } from "../../hooks/animateHook";
 
 function Footer() {
   const { ref, animation } = useAnimateHook(0.1);

@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../assets/img1.jpg";
+import img1 from "../../assets/profile/img1.jpg";
 import { motion } from "framer-motion";
-import { useAnimateHook } from "../hooks/animateHook";
+import { useAnimateHook } from "../../hooks/animateHook";
 
 function About() {
   const { animation, ref } = useAnimateHook(0.4);
@@ -15,8 +15,8 @@ function About() {
         <div className="about">
           <div className="about2">
             <p>
-              Hi👋, my name is Bipin a nd I enjoy making beautifull websites.As
-              a junior Front-End Developer,I make a good skills of HTML, CSS,
+              Hi👋, my name is Bipin a nd I enjoy making beautifull websites. As
+              a junior Front-End Developer, I have a good skills of HTML, CSS,
               JS, ReactJS/NextJS, Tailwindcss <br /> <br /> I'm always
               interested to work on frontend projects with positive people.
             </p>

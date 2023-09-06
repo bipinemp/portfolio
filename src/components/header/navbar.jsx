@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import HexagonWithLetter from "../components/HexagonWithLetter";
+import HexagonWithLetter from "../../components/icons_loaders/HexagonWithLetter";
 
 const Navbar = () => {
   const [ham, setHam] = useState(false);

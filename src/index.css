@@ -586,6 +586,10 @@ nav img {
   height: 41px;
   object-fit: contain;
 }
+.skills2-1 span {
+  width: 41px;
+  height: 41px;
+}
 
 /* Work component css starts here!! */
 .work {
@@ -653,7 +657,7 @@ nav img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  object-position: center center;
+  object-position: top center;
   mix-blend-mode: multiply;
   cursor: pointer;
   z-index: -1;

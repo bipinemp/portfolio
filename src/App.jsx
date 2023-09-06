@@ -1,13 +1,13 @@
-import Navbar from "./components/navbar";
-import Loader from "./components/loader";
+import Navbar from "./components/header/navbar";
+import Loader from "./components/icons_loaders/loader";
 import { useState, useEffect } from "react";
-import Hero from "./components/Hero";
-import Info from "./components/Info";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Hero from "./components/sections/Hero";
+import Info from "./components/header/Info";
+import About from "./components/sections/About";
+import Skills from "./components/sections/Skills";
+import Work from "./components/sections/Work";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
