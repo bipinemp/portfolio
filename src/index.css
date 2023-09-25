@@ -9,6 +9,15 @@
   text-decoration: none;
   color: var(--normalText);
 }
+
+.App {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 40px;
@@ -288,6 +297,7 @@ nav img {
   color: var(--icon);
   position: fixed;
   bottom: 0;
+  left: 0;
   padding-left: 50px;
   display: flex;
   flex-direction: column;
@@ -884,6 +894,20 @@ nav img {
 }
 
 /* Media Queries starts here */
+@media (min-width: 1536px) {
+  .App {
+    padding-left: 13rem /* 208px */;
+    padding-right: 13rem /* 208px */;
+  }
+}
+
+@media (min-width: 1280px) {
+  .App {
+    padding-left: 7rem /* 112px */;
+    padding-right: 7rem /* 112px */;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .hero {
     max-width: 860px;
@@ -954,6 +978,10 @@ nav img {
 }
 
 @media only screen and (max-width: 768px) {
+  .App {
+    padding-left: 2.5rem /* 40px */;
+    padding-right: 2.5rem /* 40px */;
+  }
   .info {
     display: none;
   }
