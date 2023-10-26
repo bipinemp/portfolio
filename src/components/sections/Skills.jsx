@@ -21,9 +21,9 @@ function Skills() {
         <p>
           I possess a solid grasp of essential frontend skills that allow me to
           craft stunning and dynamic websites. <br /> <br />I have created many
-          websites with the help of HTML5 , CSS3 , Javascript , ReactJs. I also
-          have very Basic knowledge of MERN stack , currently I'm learning MERN
-          Btw. <br />
+          websites with the help of HTML5 , CSS3 , Javascript , ReactJs ,
+          Nextjs. I also have knowledge of backend as well specially MERN stack.
+          <br />
         </p>
         <span>
           For more details just <a href="#contact">Contact</a> me.
