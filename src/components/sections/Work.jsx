@@ -1,6 +1,7 @@
 import React from "react";
 import ecommerce from "../../assets/works/ecommerce.png";
 import movie from "../../assets/works/movie.png";
+import blogwebsite from "../../assets/works/blogwebsite.mp4";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { useAnimateHook } from "../../hooks/animateHook";
@@ -9,6 +10,7 @@ import { motion } from "framer-motion";
 function Work() {
   const { animation: animation1, ref: ref1 } = useAnimateHook(0.2);
   const { animation: animation2, ref: ref2 } = useAnimateHook(0.3);
+  const { animation: animation3, ref: ref3 } = useAnimateHook(0.4);
   return (
     <div className="work" id="work">
       <div className="work1">
@@ -102,6 +104,50 @@ function Work() {
                 <a href="https://flimbuzz.vercel.app/" target="_blank">
                   <RiExternalLinkLine className="icon2" />
                   <p title="Live Demo"></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={ref3}
+          animate={animation3}
+          className="work2-1 first-work"
+        >
+          <div className="work2-1-1 work2-1-1--1">
+            <video width="100%" height="100%" controls>
+              <source src={blogwebsite} type="video/mp4" />
+            </video>
+          </div>
+          <div className="work2-1-2">
+            <div className="work2-1-2-1">
+              <p>Featured Project</p>
+            </div>
+            <div className="work2-1-2-2">
+              <h1>Blog Website</h1>
+            </div>
+            <div className="work2-1-2-3">
+              <p>
+                This is a blog website like reddit where users can
+                create/read/edit/delete posts upvote/downvote post and search
+                for post.
+              </p>
+            </div>
+            <div className="work2-1-2-4">
+              <p>Next.JS 13</p>
+              <p>React-query</p>
+              <p>Tailwind Css</p>
+              <p>ShadcnUI</p>
+            </div>
+            <div className="work2-1-2-5">
+              <div>
+                <a
+                  href="https://github.com/bipinemp/blogwebsite"
+                  target="_blank"
+                >
+                  <FiGithub className="icon1" />
+                  <p title="Github"></p>
                 </a>
               </div>
             </div>

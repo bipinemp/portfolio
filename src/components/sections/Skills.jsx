@@ -6,6 +6,7 @@ import js from "../../assets/skills/js.png";
 import react from "../../assets/skills/react.png";
 import tailwindcss from "../../assets/skills//tailwindcss.png";
 import nextjs from "../../assets/skills//nextjs.png";
+import ts from "../../assets/skills/ts.png";
 
 import { motion } from "framer-motion";
 import { useAnimateHook } from "../../hooks/animateHook";
@@ -45,7 +46,11 @@ function Skills() {
           </div>
           <div>
             <img src={js} alt="JS logo" />
-            <p title="Javascript"></p>
+            <p title="JavaScript"></p>
+          </div>
+          <div>
+            <img src={ts} alt="TS logo" />
+            <p title="TypeScript"></p>
           </div>
           <div>
             <img src={react} alt="React logo" />

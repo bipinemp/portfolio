@@ -657,6 +657,9 @@ nav img {
   background: var(--signature);
   border-radius: 5px;
 }
+.work2-1-1--1 {
+  background: transparent;
+}
 .work2-1-1-1 {
   left: auto;
   right: 0;
