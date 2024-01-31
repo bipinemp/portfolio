@@ -2,6 +2,7 @@ import React from "react";
 import ecommerce from "../../assets/works/ecommerce.png";
 import movie from "../../assets/works/movie.png";
 import blogwebsite from "../../assets/works/blogwebsite.mp4";
+import chatapp from "../../assets/works/chatapp.mp4";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { useAnimateHook } from "../../hooks/animateHook";
@@ -144,6 +145,53 @@ function Work() {
               <div>
                 <a
                   href="https://github.com/bipinemp/blogwebsite"
+                  target="_blank"
+                >
+                  <FiGithub className="icon1" />
+                  <p title="Github"></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={ref3}
+          animate={animation3}
+          className="work2-1 first-work"
+        >
+          <div className="work2-1-1 work2-1-1--1">
+            <video width="100%" height="100%" controls>
+              <source src={chatapp} type="video/mp4" />
+            </video>
+          </div>
+          <div className="work2-1-2">
+            <div className="work2-1-2-1">
+              <p>Featured Project</p>
+            </div>
+            <div className="work2-1-2-2">
+              <h1>Chat Application</h1>
+            </div>
+            <div className="work2-1-2-3">
+              <p>
+                This is a chat application where user can register/login with
+                credentials or with google. User can search for users and
+                send/accept/decline friend request. and can have 1-1 chat with
+                the friends.
+              </p>
+            </div>
+            <div className="work2-1-2-4">
+              <p>Next.JS 14</p>
+              <p>React-query</p>
+              <p>socket.io</p>
+              <p>express</p>
+              <p>Tailwind Css</p>
+              <p>ShadcnUI</p>
+            </div>
+            <div className="work2-1-2-5">
+              <div>
+                <a
+                  href="https://github.com/bipinemp/chat_app_socket_nextjs"
                   target="_blank"
                 >
                   <FiGithub className="icon1" />
