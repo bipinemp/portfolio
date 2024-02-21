@@ -12,6 +12,7 @@ function Work() {
   const { animation: animation1, ref: ref1 } = useAnimateHook(0.2);
   const { animation: animation2, ref: ref2 } = useAnimateHook(0.3);
   const { animation: animation3, ref: ref3 } = useAnimateHook(0.4);
+  const { animation: animation4, ref: ref4 } = useAnimateHook(0.5);
   return (
     <div className="work" id="work">
       <div className="work1">
@@ -156,8 +157,8 @@ function Work() {
         </motion.div>
 
         <motion.div
-          ref={ref3}
-          animate={animation3}
+          ref={ref4}
+          animate={animation4}
           className="work2-1 first-work"
         >
           <div className="work2-1-1 work2-1-1--1">
@@ -181,12 +182,16 @@ function Work() {
               </p>
             </div>
             <div className="work2-1-2-4">
-              <p>Next.JS 14</p>
-              <p>React-query</p>
-              <p>socket.io</p>
-              <p>express</p>
-              <p>Tailwind Css</p>
-              <p>ShadcnUI</p>
+              <div>
+                <p>Next.JS 14</p>
+                <p>React-query</p>
+                <p>socket.io</p>
+              </div>
+              <div>
+                <p>express</p>
+                <p>Tailwind Css</p>
+                <p>ShadcnUI</p>
+              </div>
             </div>
             <div className="work2-1-2-5">
               <div>
