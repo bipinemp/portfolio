@@ -181,7 +181,7 @@ function Work() {
                 the friends.
               </p>
             </div>
-            <div className="work2-1-2-4">
+            <div className="work2-1-2-4-1">
               <div>
                 <p>Next.JS 14</p>
                 <p>React-query</p>
