@@ -80,7 +80,7 @@ function Hero() {
           transition={{
             type: "spring",
             bounce: 0.1,
-            delay: 2.05,
+            delay: 2.15,
           }}
         >
           🔽 Download Resume
