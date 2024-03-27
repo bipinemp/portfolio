@@ -91,9 +91,13 @@ function Work() {
               </p>
             </div>
             <div className="work2-1-2-4">
-              <p>Next.JS 13</p>
-              <p>React-query</p>
-              <p>Tailwind Css</p>
+              <div>
+                <p>Next.JS 13</p>
+                <p>React-query</p>
+              </div>
+              <div>
+                <p>Tailwind Css</p>
+              </div>
             </div>
             <div className="work2-1-2-5">
               <div>
@@ -137,10 +141,14 @@ function Work() {
               </p>
             </div>
             <div className="work2-1-2-4">
-              <p>Next.JS 13</p>
-              <p>React-query</p>
-              <p>Tailwind Css</p>
-              <p>ShadcnUI</p>
+              <div>
+                <p>Next.JS 13</p>
+                <p>React-query</p>
+              </div>
+              <div>
+                <p>Tailwind Css</p>
+                <p>ShadcnUI</p>
+              </div>
             </div>
             <div className="work2-1-2-5">
               <div>
@@ -185,10 +193,12 @@ function Work() {
               <div>
                 <p>Next.JS 14</p>
                 <p>React-query</p>
-                <p>socket.io</p>
               </div>
               <div>
+                <p>socket.io</p>
                 <p>express</p>
+              </div>
+              <div>
                 <p>Tailwind Css</p>
                 <p>ShadcnUI</p>
               </div>

@@ -647,6 +647,7 @@ nav img {
   gap: 10px;
   justify-content: space-between;
   position: relative;
+  height: auto;
 }
 .work2-1-1 {
   position: absolute;
@@ -732,7 +733,6 @@ nav img {
 .work2-1-2-4 {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
   gap: 0.5rem;
   color: var(--icon);
   font-family: var(--normalText);
@@ -743,10 +743,12 @@ nav img {
 .work2-1-2-4-1 {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   gap: 0.5rem;
-  flex-direction: column;
-  align-items: flex-end;
-  color: var(--icon);
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  color: white;
   font-family: var(--normalText);
   font-size: 0.7rem;
   margin-bottom: 10px;
@@ -993,8 +995,8 @@ nav img {
 
 @media only screen and (max-width: 768px) {
   .App {
-    padding-left: 2.5rem /* 40px */;
-    padding-right: 2.5rem /* 40px */;
+    padding-left: 0.7rem /* 40px */;
+    padding-right: 0.7rem /* 40px */;
   }
   .info {
     display: none;
@@ -1187,9 +1189,7 @@ nav img {
   .aboutimg {
     width: 70%;
   }
-  .about2 p {
-    text-align: center;
-  }
+
   .skills2 p {
     text-align: center;
   }
