@@ -160,6 +160,12 @@ function Work() {
                   <p title="Github"></p>
                 </a>
               </div>
+              <div>
+                <a href="https://writz.vercel.app/" target="_blank">
+                  <RiExternalLinkLine className="icon2" />
+                  <p title="Live Demo"></p>
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>

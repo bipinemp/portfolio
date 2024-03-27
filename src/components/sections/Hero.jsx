@@ -72,6 +72,20 @@ function Hero() {
           </motion.button>
         </a>
       </div>
+      <div className="hero5" style={{ color: "white" }}>
+        <motion.a
+          href="https://drive.google.com/file/d/1KFETyhFESyyBGbaw6LUpRiqDMK5_xjR9/view?usp=sharing"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            bounce: 0.1,
+            delay: 2.05,
+          }}
+        >
+          🔽 Download Resume
+        </motion.a>
+      </div>
     </div>
   );
 }

@@ -284,6 +284,12 @@ nav img {
   transition: all 150ms linear;
   cursor: pointer;
 }
+
+.hero5 a {
+  font-family: var(--normalText);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
 .hero5 button:hover {
   background-color: var(--hoverbtn) !important;
 }
