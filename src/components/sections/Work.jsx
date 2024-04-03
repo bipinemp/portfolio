@@ -90,7 +90,7 @@ function Work() {
                 Functionality.
               </p>
             </div>
-            <div className="work2-1-2-4">
+            <div className="work2-1-2-4-1">
               <div>
                 <p>Next.JS 13</p>
                 <p>React-query</p>
@@ -99,6 +99,7 @@ function Work() {
                 <p>Tailwind Css</p>
               </div>
             </div>
+
             <div className="work2-1-2-5">
               <div>
                 <a href="https://github.com/bipinemp/moviesapp" target="_blank">
@@ -140,7 +141,7 @@ function Work() {
                 for post.
               </p>
             </div>
-            <div className="work2-1-2-4">
+            <div className="work2-1-2-4-1">
               <div>
                 <p>Next.JS 13</p>
                 <p>React-query</p>
@@ -150,6 +151,7 @@ function Work() {
                 <p>ShadcnUI</p>
               </div>
             </div>
+
             <div className="work2-1-2-5">
               <div>
                 <a

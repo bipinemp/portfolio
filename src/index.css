@@ -739,6 +739,7 @@ nav img {
 .work2-1-2-4 {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
   gap: 0.5rem;
   color: var(--icon);
   font-family: var(--normalText);
@@ -750,6 +751,7 @@ nav img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   flex-grow: 1;
   gap: 0.5rem;
   /* flex-direction: column; */
