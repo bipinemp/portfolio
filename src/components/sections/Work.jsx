@@ -3,6 +3,7 @@ import ecommerce from "../../assets/works/ecommerce.png";
 import movie from "../../assets/works/movie.png";
 import blogwebsite from "../../assets/works/blogwebsite.mp4";
 import chatapp from "../../assets/works/chatapp.mp4";
+import course from "../../assets/works/course.mp4";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { useAnimateHook } from "../../hooks/animateHook";
@@ -13,6 +14,7 @@ function Work() {
   const { animation: animation2, ref: ref2 } = useAnimateHook(0.3);
   const { animation: animation3, ref: ref3 } = useAnimateHook(0.4);
   const { animation: animation4, ref: ref4 } = useAnimateHook(0.5);
+  const { animation: animation5, ref: ref5 } = useAnimateHook(0.6);
   return (
     <div className="work" id="work">
       <div className="work1">
@@ -219,6 +221,61 @@ function Work() {
                 >
                   <FiGithub className="icon1" />
                   <p title="Github"></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={ref5}
+          animate={animation5}
+          className="work2-1 first-work"
+        >
+          <div className="work2-1-1 work2-1-1--1">
+            <video width="100%" height="100%" controls>
+              <source src={course} type="video/mp4" />
+            </video>
+          </div>
+          <div className="work2-1-2">
+            <div className="work2-1-2-1">
+              <p>Featured Project</p>
+            </div>
+            <div className="work2-1-2-2">
+              <h1>Course Platform</h1>
+            </div>
+            <div className="work2-1-2-3">
+              <p>
+                This is a course platform for Counsaltancies to provide paid
+                courses/exams. User will purchase and complete/track the
+                progress.Admin will manage the courses ,view analytics etc.
+              </p>
+            </div>
+            <div className="work2-1-2-4-1">
+              <div>
+                <p>Next.JS 14</p>
+                <p>React-query</p>
+                <p>prisma</p>
+              </div>
+              <div>
+                <p>Tailwind Css</p>
+                <p>ShadcnUI</p>
+              </div>
+            </div>
+            <div className="work2-1-2-5">
+              <div>
+                <a
+                  href="https://github.com/bipinemp/courseplatform"
+                  target="_blank"
+                >
+                  <FiGithub className="icon1" />
+                  <p title="Github"></p>
+                </a>
+              </div>
+              <div>
+                <a href="https://courseplatform.vercel.app/" target="_blank">
+                  <RiExternalLinkLine className="icon2" />
+                  <p title="Live Demo"></p>
                 </a>
               </div>
             </div>

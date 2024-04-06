@@ -7,6 +7,12 @@ import react from "../../assets/skills/react.png";
 import tailwindcss from "../../assets/skills//tailwindcss.png";
 import nextjs from "../../assets/skills//nextjs.png";
 import ts from "../../assets/skills/ts.png";
+import express from "../../assets/skills/express.svg";
+import mongodb from "../../assets/skills/mongodb.svg";
+import mysql from "../../assets/skills/mysql.svg";
+import git from "../../assets/skills/git.svg";
+import docker from "../../assets/skills/docker.svg";
+import postgresql from "../../assets/skills/postgres.svg";
 
 import { motion } from "framer-motion";
 import { useAnimateHook } from "../../hooks/animateHook";
@@ -59,6 +65,51 @@ function Skills() {
           <div>
             <img src={nextjs} alt="Next.JS logo" />
             <p title="NEXT.js"></p>
+          </div>
+          <div>
+            <img
+              src="https://miro.medium.com/v2/resize:fit:1400/1*elhu-42TzQEdsFjKDbQhhA.png"
+              alt="React Query logo"
+            />
+            <p title="React-Query"></p>
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+              alt="Redux logo"
+            />
+            <p title="Redux"></p>
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <p title="Node.js"></p>
+          </div>
+          <div>
+            <img src={express} alt="Exporess.js" height={50} width={40} />
+            <p title="Exporess.js"></p>
+          </div>
+          <div>
+            <img src={mongodb} alt="MongoDB" height={50} width={40} />
+            <p title="MongoDB"></p>
+          </div>
+          <div>
+            <img src={mysql} alt="MySql" height={50} width={40} />
+            <p title="MySql"></p>
+          </div>
+          <div>
+            <img src={postgresql} alt="PostgreSql" height={50} width={40} />
+            <p title="PostgreSql"></p>
+          </div>
+          <div>
+            <img src={git} alt="Git" height={50} width={40} />
+            <p title="Git"></p>
+          </div>
+          <div>
+            <img src={docker} alt="Docker" height={50} width={40} />
+            <p title="Docker"></p>
           </div>
         </div>
       </div>
