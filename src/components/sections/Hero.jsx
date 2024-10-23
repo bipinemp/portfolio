@@ -78,7 +78,7 @@ function Hero() {
             color: "white",
             textDecorationColor: "white",
           }}
-          href="https://drive.google.com/file/d/1KFETyhFESyyBGbaw6LUpRiqDMK5_xjR9/view?usp=sharing"
+          href="https://drive.google.com/file/d/1K7GK09kq1tY3ReCC9kKxEBpoO0Ue91TS/view?usp=sharing"
         >
           <motion.p
             initial={{ y: 50, opacity: 0 }}
