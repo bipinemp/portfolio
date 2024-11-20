@@ -78,7 +78,7 @@ function Hero() {
             color: "white",
             textDecorationColor: "white",
           }}
-          href="https://drive.google.com/file/d/1fSZDhqMXQw3zh9I0KoQL9gAbL4orGArs/view?usp=sharing"
+          href="https://drive.google.com/file/d/1iAKBhKEXEahg6vXtpBhBwwmx4lpHoNQl/view?usp=sharing"
           target="_blank"
         >
           <motion.p
